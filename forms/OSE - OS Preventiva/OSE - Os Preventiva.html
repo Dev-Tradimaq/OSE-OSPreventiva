@@ -1,0 +1,668 @@
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css"/>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+	<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+	<script language="javascript"> function disablePullToRefresh(){return true; }</script>
+</head>
+<body>
+<div class="fluig-style-guide">
+<form name="form" role="form">
+
+	<ul class="nav nav-tabs clearfix" role="tablist">
+	    <li><a>PROGRAMAÇÃO DE PREVENTIVAS</a></li>
+	    <li class="active"><a>OS</a></li>
+	    <li><a>CHECKLIST PREVENTIVA</a></li>
+	</ul>
+
+	<div class="panel panel-primary OS">
+    <div class="panel-heading">
+        <h3 class="panel-title">Dados do Equipamento</h3>
+    </div>
+   	<div class="panel-body">
+									
+		<div class="row">
+		
+			<div class="form-group form-field col-xs-12 col-md-6">
+				<label for="OBJETODEMANUTENCAO">Objeto de Manutenção:</label>
+				<input type="hidden" id="CHAPARESP" name="CHAPARESP" value="">
+				<input
+				    type="zoom"
+				    id = "OBJETODEMANUTENCAO"
+				    name="OBJETODEMANUTENCAO"
+				    class="form-control"
+				    value=""
+				    data-zoom="{
+				        'displayKey':'IDOBJOF',
+				        'datasetId':'ds_OSE_Objeto_de_Manutencao',
+				        'placeholder':'Selecione...',
+				        'fields':[
+				            {
+				               'field':'IDOBJOF',
+				               'label':'Objeto de Manutenção',
+				              'standard':'true'
+				            },
+				            {
+				            	'field':'SERIE',
+				            	'label':'Série'
+				            }
+				        ]
+				     }"
+				/>
+			</div>
+				
+			<div class="form-group col-xs-12 col-md-6">
+				<label for="SERIE">Serie:</label>
+				<input type="text" id="SERIE" name="SERIE" value="" class="form-control" readonly="readonly">
+			</div>
+			
+		</div>
+		<div class="row">
+		
+			<div class="form-group col-xs-12 col-md-4">
+				<label for="STATUS">Status da Máquina:</label>
+				<input type="hidden" id="CODSTATUS" name="CODSTATUS" value="">
+				<input type="text" id="STATUS" name="STATUS" value="" class="form-control" readonly="readonly">
+			</div>
+			
+			<div class="form-group col-xs-12 col-md-4">
+				<label for="CODMODELO">Cod. Modelo:</label>
+				<input type="hidden" id="CODMODELO" name="CODMODELO" value="">
+				<input type="text" id="MODELO" name="MODELO" value="" class="form-control" readonly="readonly">
+			</div>
+			
+			<div class="form-group col-xs-12 col-md-4">
+				<label for="CODSUBMODELO">Cod. Submodelo:</label>
+				<input type="hidden" id="CODSUBMODELO" name="CODSUBMODELO" value="">
+				<input type="text" id="SUBMODELO" name="SUBMODELO" value="" class="form-control" readonly="readonly">
+			</div>
+			
+		</div>
+		<div class="row">
+			
+			<div class="form-group col-xs-12 col-md-3">
+				<label for="CODTIPOOBJ">Cod. Tipo Objeto:</label>
+				<input type="hidden" id="CODTIPOOBJ" name="CODTIPOOBJ" value="">
+				<input type="text" id="TIPOOBJ" name="TIPOOBJ" value="" class="form-control" readonly="readonly">
+			</div>
+			
+			<div class="form-group col-xs-12 col-md-3">
+				<label for="FABRICANTE">Fabricante:</label>
+				<input type="hidden" name="CODFABRICANTE" id="CODFABRICANTE">
+				<input type="text" id="FABRICANTE" name="FABRICANTE" value="" class="form-control" readonly="readonly">
+			</div>
+			
+			<div class="form-group col-xs-12 col-md-3">
+				<label for="HORIMETROMEDIDOR">Horímetro Medidor:</label>
+				<input type="text" id="HORIMETROMEDIDOR" name="HORIMETROMEDIDOR" value="" class="form-control">
+				<input type="hidden" id="HORIMETROMAXIMO" name="HORIMETROMAXIMO">
+				<input type="hidden" id="HORIMETROACUMULADO" name="HORIMETROACUMULADO">
+				<input type="hidden" id="DATACOLETA" name="DATACOLETA">
+			</div>
+	      
+	         <div class="form-group col-xs-12 col-md-3"> 
+		         <label for="VALORMEDIDOR5">Diesel/Gasolina/Alcool:</label>
+		         <input type="number" name="VALORMEDIDOR5" id="VALORMEDIDOR5" min="0" class="form-control">
+				 <input type="hidden" name="USAINDICADORUSO5" id="USAINDICADORUSO5">
+	    	 </div>
+			
+		</div>
+			
+    </div>
+	</div>
+
+	<div class="panel panel-primary OS">
+    <div class="panel-heading">
+        <h3 class="panel-title">Dados Cadastrais</h3>
+    </div>
+    <div class="panel-body">
+
+		<div class="row">
+		
+			<div class="form-group col-xs-12 col-md-4">
+				<label for="LOCALESTOQUE">Local de Estoque:</label>
+				<input type="hidden" id="CODLOCALESTOQUE" name="CODLOCALESTOQUE">
+				<input type="text" id="LOCALESTOQUE" name="LOCALESTOQUE" value="" class="form-control" readonly="readonly">
+			</div>
+		
+			<div class="form-group col-xs-12 col-md-4">
+				<label for="FILIAL">Filial:</label>
+				<input type="hidden" id="CODFILIAL" name="CODFILIAL">
+				<input type="text" id="FILIAL" name="FILIAL" value="" class="form-control" readonly="readonly">
+			</div>
+	
+			<div class="form-group col-xs-12 col-md-4">
+				<label for="OSNUMEROMOV">Nº Movimento (OS 1.1.22):</label>
+				<input type="text" id="OSNUMEROMOV" name="OSNUMEROMOV" value="" class="form-control" readonly="readonly">
+				<input type="hidden" id="OSIDMOV" name="OSIDMOV">
+			</div>
+			
+		</div>		
+		<div class="row">
+	
+			<div class="form-group col-xs-12 col-md-4">
+				<label for="CENTRODECUSTO">Centro de Custo:</label>
+				<input type="hidden" id="CODCENTRODECUSTO" name="CODCENTRODECUSTO">
+				<input type="text" id="CENTRODECUSTO" name="CENTRODECUSTO" value="" class="form-control" readonly="readonly">
+			</div>
+										
+			<div class="form-group col-xs-12 col-md-4">
+				<label for="DEPARTAMENTO">Departamento:</label>
+				<input type="hidden" id="CODDEPARTAMENTO" name="CODDEPARTAMENTO">
+				<input type="text" id="DEPARTAMENTO" name="DEPARTAMENTO" value="" class="form-control" readonly="readonly">
+			</div>
+			
+			<div class="form-group col-xs-12 col-md-4">
+				<label for="LOCALIZACAO">Localização:</label>
+				<input type="hidden" id="CODLOCALIZACAO" name="CODLOCALIZACAO">
+				<input type="text" id="LOCALIZACAO" name="LOCALIZACAO" value="" class="form-control" readonly="readonly">
+			</div>
+			
+		</div>		
+			
+	</div>
+    </div>
+    
+    <div class="panel panel-primary OS">
+    <div class="panel-heading">
+        <h3 class="panel-title">Classificação</h3>
+    </div>
+    <div class="panel-body">
+
+		<div class="row">
+	
+			<div class="form-group col-xs-12 col-md-4">
+				<label for="ULTIMOPLANOREALIZADO">Último Plano Realizado:</label>
+				<input type="text" id="ULTIMOPLANOREALIZADO" name=ULTIMOPLANOREALIZADO value="" class="form-control" readonly="readonly">
+			</div>
+			
+			
+			<div class="form-group col-xs-12 col-md-4">
+				<label for="PLANODEMANUTENCAO">Plano de Manutenção:</label>
+				<input type="hidden" name="IDPLANO" id="IDPLANO">
+				<input
+				    type="zoom"
+				    id = "PLANODEMANUTENCAO"
+				    name="PLANODEMANUTENCAO"
+				    class="form-control"
+				    value=""
+				    data-zoom="{
+				        'displayKey':'PLANO',
+				        'datasetId':'ds_OSE_Preventiva_PlanosManutencao',
+				        'placeholder':'Selecione...',
+				        'fields':[
+				            {
+				               'field':'PLANO',
+				               'label':'Plano de ManutenÃ§Ã£o',
+				              'standard':'true'
+				            }
+				        ]
+				     }"
+				/>
+			</div>
+				
+			<div class="form-group col-xs-12 col-md-4">
+				<label for="HORIMETROVENCIMENTO">Horímetro de Vencimento:</label>
+				<input type="text" id="HORIMETROVENCIMENTO" name="HORIMETROVENCIMENTO" value="" class="form-control" readonly="readonly">
+			</div>
+
+		</div>		
+			
+	</div>
+    </div>
+
+	<div class="panel panel-primary OS">
+    <div class="panel-heading">
+        <h3 class="panel-title">Histórico de Requisições</h3>
+    </div>
+    <div class="panel-body">
+    
+		<input type="hidden" name="REQUISICOESPENDENTES" id="REQUISICOESPENDENTES">
+		
+		<div class="row">
+		
+			<div class="form-group">
+				<table id="TABELA_RMOS" class="table" cellspacing="0" tablename="TABELA_RMOS" noaddbutton="true" nodeletebutton="true">
+					<thead> 
+						<tr class="tableHeadRow">
+							<th class="tableColumn"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="fs-v-align-middle col-md-12 col-sm-12">
+								<div class="form-group">
+									<div class="row">
+	
+										<div class="form-group col-xs-12 col-md-3">
+											<label for="RMNUMEROMOV">RM:</label>
+											<input type="text" id="RMNUMEROMOV" name="RMNUMEROMOV" value="" class="form-control" readonly="readonly">
+											<input type="hidden" id="RMIDMOV" name="RMIDMOV">
+										</div>
+									
+										<div class="form-group col-xs-12 col-md-3">
+											<label for="RMSTATUS">Status:</label>
+											<input type="text" id="RMSTATUS" name="RMSTATUS" value="" class="form-control" readonly="readonly">
+										</div>
+									
+										<div class="form-group col-xs-12 col-md-3">
+											<label for="RMAPROVACAO">Aprovação:</label>
+											<input type="text" id="RMAPROVACAO" name="RMAPROVACAO" value="" class="form-control" readonly="readonly">
+										</div>
+	
+										<div class="form-group col-xs-12 col-md-3">
+											<label for="RMCONSULTARAPROVACAO">Consultar Aprovação:</label>
+											<input type="button" class="form-control" id="RMCONSULTARAPROVACAO" value="Consultar" onclick="consultaRMdaOS('TABELA_RMOS')">
+										</div>
+										
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+		</div>
+
+    </div>
+	</div>
+    
+	<div class="panel panel-primary OS">
+    <div class="panel-heading">
+        <h3 class="panel-title">Histórico de Análise de Manutenção</h3>
+    </div>
+    <div class="panel-body">
+
+		<div class="row">
+			
+			<div class="form-group col-xs-12 col-md-4">
+				<label for="DATAINICIOOS">Data Inicio OS:</label>
+				<input type="text" id="DATAINICIOOS" name="DATAINICIOOS" value="" class="form-control" readonly="readonly">
+			</div>
+			
+			<!-- <div class="form-group col-xs-12 col-md-3">
+				<label for="PREVISAOEXECUCAOSERVICO">Previsão Execução Serviço Programado:</label>
+				<input type="date" id="PREVISAOEXECUCAOSERVICO" name="PREVISAOEXECUCAOSERVICO" value="" class="form-control">
+			</div> -->
+			
+			
+			<div class="form-group col-xs-12 col-md-4">
+				<label for="TOTALHORASEXECUTADAS">Total de Horas Executadas:</label>
+				<input type="text" id="TOTALHORASEXECUTADAS" name="TOTALHORASEXECUTADAS" value="" class="form-control" readonly="readonly">
+			</div>
+			
+			<div class="form-group col-xs-12 col-md-4">
+				<label for="DATATERMINOOS">Data Termino OS:</label>
+				<input type="text" id="DATATERMINOOS" name="DATATERMINOOS" value="" class="form-control" readonly="readonly">
+			</div>
+		
+		</div>
+		
+		<div class="row">
+		
+			<div class="form-group col-xs-12 col-md-12">
+				<label for="FOLLOWUP">Follow up:</label>
+				<textarea id="FOLLOWUP" name="FOLLOWUP" value="" rows="3" class="form-control"></textarea>
+			</div>
+		
+		</div>
+
+    </div>
+	</div>
+	
+	<!-- ========================================================================================================================== -->
+	
+	<div class="panel panel-primary PREVENTIVA">
+    <div class="panel-heading">
+        <h3 class="panel-title">Histórico HHT - Mão de obra</h3>
+    </div>
+    <div class="panel-body">
+    
+		<div class="row">
+		
+			<div class="form-group">
+				<table id="TABELA_MAODEOBRA" class="table" cellspacing="0" tablename="TABELA_MAODEOBRA" noaddbutton="true" customFnDelete="deleteLinhaTabela(this, 'TABELA_MAODEOBRA')">
+					<thead>
+						<tr class="tableHeadRow">
+							<th class="tableColumn"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="fs-v-align-middle col-md-12 col-sm-12">
+								<div class="form-group">
+									<div class="row">
+									
+										<div class="form-group col-xs-12 col-md-4">
+											<label for="MAODEOBRANOME">Nome:</label>
+											<input
+											    type="zoom"
+											    id = "MAODEOBRANOME"
+											    name="MAODEOBRANOME"
+											    class="form-control"
+											    value=""
+											    data-zoom="{
+											        'displayKey':'NOME',
+											        'datasetId':'ds_OSE_Mao_de_Obra',
+											        'placeholder':'Selecione...',
+											        'fields':[
+											            {
+											               'field':'NOME',
+											               'label':'NOME',
+											              'standard':'true'
+											            }
+											        ]
+											     }"
+											/>
+										</div>
+										
+										<div class="form-group col-xs-12 col-md-3">
+											<label for="MAODEOBRAHORAINICIO">Data/Hora Início:</label>
+											<input type="text" id="MAODEOBRAHORAINICIO" name="MAODEOBRAHORAINICIO" value="" class="form-control" readonly="readonly">
+										</div>
+											
+										<div class="form-group col-xs-12 col-md-3">
+											<label for="MAODEOBRAHORAFIM">Data/Hora Fim:</label>
+											<input type="text" id="MAODEOBRAHORAFIM" name="MAODEOBRAHORAFIM" value="" class="form-control" readonly="readonly">
+										</div>
+										
+										<div class="form-group col-xs-12 col-md-2">
+											<label for="MAODEOBRAHORASTOTAIS">Horas Totais:</label>
+											<input type="text" id="MAODEOBRAHORASTOTAIS" name="MAODEOBRAHORASTOTAIS" value="" class="form-control" readonly="readonly">
+										</div>
+										
+									</div>
+									
+									<div class="row">
+									
+										<div class="form-group col-xs-12 col-md-6">
+											<button type="button" class="btn btn-lg btn-primary btn-block" id="BOTAOINICIAROS" name="BOTAOINICIAROS" onclick="iniciaOS(this)">Iniciar OS</button>
+										</div>
+										<div class="form-group col-xs-12 col-md-6">
+											<button type="button" class="btn btn-lg btn-default btn-block" id="BOTAOPAUSAROS" name="BOTAOPAUSAROS" onclick="finalizaOS(this)">Pausar OS</button>
+										</div>
+							
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				    
+			<button type="button" class="btn btn-primary" name="TABELA_MAODEOBRA_BOTAO" id="TABELA_MAODEOBRA_BOTAO" onclick="addLinhaTabela('TABELA_MAODEOBRA')">Incluir Mão de Obra</button>
+			 	    
+			</div>
+			
+			<table id="MAODEOBRAHHT" style="display:none" class="table" cellspacing="0" tablename="MAODEOBRAHHT" noaddbutton="true" nodeletebutton="true">
+			<thead>
+				<tr class="tableHeadRow">
+					<th class="tableColumn"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+				<td class="fs-v-align-middle col-md-12 col-sm-12">
+				<div class="form-group">
+				<div class="row">
+					
+					<div class="form-group col-xs-3 col-md-3">
+						<input type="hidden" id="MAODEOBRANOMEHHT" name="MAODEOBRANOMEHHT" value="" class="form-control">
+					</div>
+					
+					<div class="form-group col-xs-3 col-md-3">
+						<input type="hidden" id="MAODEOBRAHORAINICIOHHT" name="MAODEOBRAHORAINICIOHHT" value="" class="form-control">
+					</div>
+					
+					<div class="form-group col-xs-3 col-md-3">
+						<input type="hidden" id="MAODEOBRAHORAFIMHHT" name="MAODEOBRAHORAFIMHHT" value="" class="form-control">
+					</div>
+					
+					<div class="form-group col-xs-3 col-md-3">
+						<input type="hidden" id="MAODEOBRAHORASTOTAISHHT" name="MAODEOBRAHORASTOTAISHHT" value="" class="form-control">
+					</div>
+				
+				</div>
+				</div>
+				</td>
+				</tr>
+			</tbody>
+			</table>
+			
+		</div>
+				
+    </div>
+	</div>
+	
+	<div class="panel panel-primary PREVENTIVA">
+    <div class="panel-heading">
+        <h3 class="panel-title">Serviços a Serem Executados</h3>
+    </div>
+    <div class="panel-body">
+		
+		<div class="row">
+
+			<div class="form-group col-xs-12 col-md-6">
+				<input type="button" class="form-control btn-to-hide" value="Fotos Antes" onclick="showCamera();">
+			</div>
+
+			<div class="form-group col-xs-12 col-md-6">
+				<input type="button" class="form-control btn-to-hide" value="Fotos Depois" onclick="showCamera();">
+			</div>
+		
+		</div>
+    
+		<div class="row" id="ITENSPLANOMAN">
+		
+			<div class="form-group">
+				<table id="TABELA_PLANOMANUTENCAO" class="table" cellspacing="0" tablename="TABELA_PLANOMANUTENCAO" noaddbutton="true"  nodeletebutton="true">
+					<thead>
+						<tr class="tableHeadRow">
+							<th class="tableColumn"></th>
+							<th class="tableColumn"></th>
+							<th class="tableColumn"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="fs-v-align-middle col-xs-12 col-md-7">
+								<div class="form-group">
+									<textarea class="form-control" id="PLANOMANATIVIDADE" name="PLANOMANATIVIDADE" rows="2" readonly="readonly"></textarea>
+									<input type="hidden" name="PLANOMANIDPRD" id="PLANOMANIDPRD" value="">
+									<input type="hidden" name="PLANOMANQUANTIDADE" id="PLANOMANQUANTIDADE" value="">
+									<input type="hidden" name="PLANOMANPRECOUNITARIO" id="PLANOMANPRECOUNITARIO" value="">
+								</div>
+							</td>              
+							<td class="fs-v-align-middle col-xs-12 col-md-2">
+								<div class="form-group">
+									<input type="checkbox" class="form-control" name="PLANOMANSTATUS" id="PLANOMANSTATUS" data-on-text="Executado" data-off-text="Nã Executado" data-size="normal"/>
+								</div>
+							</td>
+							<td class="fs-v-align-middle col-xs-12 col-md-3">
+								<div class="form-group">
+									<textarea class="form-control" id="PLANOMANJUSTIFICA" name="PLANOMANJUSTIFICA" rows="2"></textarea>
+								</div>
+							</td>   
+						</tr>
+					</tbody>
+				</table>
+				
+			</div>
+			
+		</div>
+		
+		<div class="row">
+
+			<div class="form-group col-xs-12 col-md-6">
+				<input type="button" class="form-control btn-to-hide" value="Fotos Antes" onclick="showCamera();">
+			</div>
+
+			<div class="form-group col-xs-12 col-md-6">
+				<input type="button" class="form-control btn-to-hide" value="Fotos Depois" onclick="showCamera();">
+			</div>
+		
+		</div>
+		
+    </div>
+	</div>
+	
+	<!-- ========================================================================================================================== -->
+
+	<div class="panel panel-primary CRONOGRAMA">
+    <div class="panel-heading">
+        <h3 class="panel-title">Localização</h3>
+    </div>
+    <div class="panel-body">
+		<div class="row">
+
+			<div class="form-group col-xs-12 col-md-12">
+				<label for="CRONOGRAMAOCAL">Local:</label>
+				<input
+				    type="zoom"
+				    id = "CRONOGRAMAOCAL"
+				    name="CRONOGRAMAOCAL"
+				    class="form-control"
+				    value=""
+				    data-zoom="{
+				        'displayKey':'NOME',
+				        'datasetId':'ds_OSE_Localizacao',
+				        'placeholder':'Pesquisar...',
+				        'fields':[
+				            {
+				               'field':'CODLOCAL',
+				               'label':'Codigo:'
+				            },
+				            {
+				            	'field':'NOME',
+				            	'label':'Local:'
+				            }
+				        ]
+				     }"
+				/>
+			</div>
+			
+			<div class="form-group col-xs-12 col-md-12">
+				<input type="button" class="form-control btn-primary" value="Buscar" onclick="consultaPreventivas()">
+			</div>
+			
+		</div>
+    </div>
+	</div>
+	
+	<div class="panel panel-primary CRONOGRAMA">
+    <div class="panel-heading">
+        <h3 class="panel-title">Cronograma de Preventivas</h3>
+    </div>
+    <div class="panel-body">
+
+		<div class="row">
+		
+			<div class="form-group">
+				<table id="TABELA_CRONOGRAMAMANUTENCAO" class="table table-hover table-condensed" cellspacing="0" tablename="TABELA_CRONOGRAMAMANUTENCAO" noaddbutton="true" nodeletebutton="true">
+					<thead> 
+						<tr class="tableHeadRow">
+							<th class="tableColumn">Objeto de Manutenção:</th>
+							<th class="tableColumn">Ultimo Vencimento:</th>
+							<th class="tableColumn">Ultima Prev:</th>
+							<th class="tableColumn">Horimetro 1ª Prev:</th>
+							<th class="tableColumn">Horas 1ª Prev:</th>
+							<th class="tableColumn">Dias 1ª Prev:</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+		</div>
+
+    </div>
+	</div>
+	
+	<div class="panel panel-primary CRONOGRAMA">
+    <div class="panel-heading">
+        <h3 class="panel-title">Histórico de Preventivas TPE e Acessórios</h3>
+    </div>
+    <div class="panel-body">
+
+		<div class="row">
+		
+			<div class="form-group">
+				<table id="TABELA_HISTORICOPREVENTIVAS" class="table table-hover table-condensed" cellspacing="0" tablename="TABELA_HISTORICOPREVENTIVAS" noaddbutton="true" nodeletebutton="true">
+					<thead> 
+						<tr class="tableHeadRow">
+							<th class="tableColumn">Objeto de Manutenção:</th>
+							<th class="tableColumn">Centro de Custo:</th>
+							<th class="tableColumn">Data Ultima Prev:</th>
+							<th class="tableColumn">Número OS:</th>
+							<th class="tableColumn">Tipo Preventiva:</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+		</div>
+
+    </div>
+	</div>
+	
+	<div class="panel panel-primary CRONOGRAMA">
+    <div class="panel-heading">
+        <h3 class="panel-title">Equipamentos Sem Preventiva</h3>
+    </div>
+    <div class="panel-body">
+
+		<div class="row">
+		
+			<div class="form-group">
+				<table id="TABELA_EQUIPAMENTOSEMPREV" class="table table-hover table-condensed" cellspacing="0" tablename="TABELA_EQUIPAMENTOSEMPREV" noaddbutton="true" nodeletebutton="true">
+					<thead> 
+						<tr class="tableHeadRow">
+							<th class="tableColumn">Objeto de Manutenção:</th>
+							<th class="tableColumn">Horimetro Atual:</th>
+							<th class="tableColumn">Data Coleta:</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+		</div>
+
+    </div>
+	</div>
+	
+</form>
+</div>
+
+    <script type="text/javascript" src="/webdesk/vcXMLRPC.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/selectedItem.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min.js"></script>
+</body>
+</html>

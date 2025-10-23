@@ -1,0 +1,1084 @@
+<list>
+  <ProcessDefinition>
+    <processDefinitionPK>
+      <companyId>1</companyId>
+      <processId>OSE - OS Preventiva</processId>
+    </processDefinitionPK>
+    <processDescription>OSE - OS Preventiva</processDescription>
+    <instruction></instruction>
+    <active>true</active>
+    <publicProcess>false</publicProcess>
+    <volumeId>Default</volumeId>
+    <categoryId>Manutenção</categoryId>
+    <managerEngineAllocationId>Papel</managerEngineAllocationId>
+    <managerEngineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Role&gt;GestorOSE&lt;/Role&gt;&lt;/AssignmentController&gt;</managerEngineAllocationConfiguration>
+    <snapshotFrequency>0</snapshotFrequency>
+    <baseDay>0</baseDay>
+    <baseMonth>0</baseMonth>
+    <periodId>Default</periodId>
+    <uniqueCardVersion>true</uniqueCardVersion>
+    <keyWord></keyWord>
+    <complementsLevel>1</complementsLevel>
+    <notifyRequisitionerComplements>true</notifyRequisitionerComplements>
+    <notifyManagerComplements>false</notifyManagerComplements>
+    <deadlineTime>0</deadlineTime>
+    <warningDeadlineTime>0</warningDeadlineTime>
+    <notifyAuthorityComplements>true</notifyAuthorityComplements>
+  </ProcessDefinition>
+  <ProcessDefinitionVersion>
+    <processDefinitionVersionPK>
+      <companyId>1</companyId>
+      <processId>OSE - OS Preventiva</processId>
+      <version>68</version>
+    </processDefinitionVersionPK>
+    <versionDescription></versionDescription>
+    <formId>0</formId>
+    <editionMode>true</editionMode>
+    <updateAttachmentsVersion>false</updateAttachmentsVersion>
+    <controlsAttachmentsSecurity>false</controlsAttachmentsSecurity>
+    <active>true</active>
+    <blockedVersion>false</blockedVersion>
+    <counterSign>false</counterSign>
+    <openInstances>0</openInstances>
+    <bpmnVersion>2</bpmnVersion>
+    <processStates/>
+    <favorito>false</favorito>
+    <inheritFormSecurity>false</inheritFormSecurity>
+    <mobileReady>true</mobileReady>
+  </ProcessDefinitionVersion>
+  <list>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>OSE - OS Preventiva</processId>
+        <version>1</version>
+        <sequence>12</sequence>
+      </processStatePK>
+      <stateName>Início</stateName>
+      <stateDescription>Início</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;OSEControladores&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>true</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>70</positionX>
+      <positionY>70</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>10</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>OSE - OS Preventiva</processId>
+        <version>1</version>
+        <sequence>14</sequence>
+      </processStatePK>
+      <stateName>Aprovação RM</stateName>
+      <stateDescription>Aprovação RM</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>14400</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;OSEAprovacao&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>280</positionX>
+      <positionY>212</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>OSE - OS Preventiva</processId>
+        <version>1</version>
+        <sequence>16</sequence>
+      </processStatePK>
+      <stateName>Follow UP</stateName>
+      <stateDescription>Follow UP</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>14400</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;OSEControladores&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>280</positionX>
+      <positionY>60</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>OSE - OS Preventiva</processId>
+        <version>1</version>
+        <sequence>18</sequence>
+      </processStatePK>
+      <stateName>Execução Preventiva</stateName>
+      <stateDescription>Execução Preventiva</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>57600</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;OSEMecanicos&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>530</positionX>
+      <positionY>357</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId>Default</periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>OSE - OS Preventiva</processId>
+        <version>1</version>
+        <sequence>13</sequence>
+      </processStatePK>
+      <stateName>Encerrar OS</stateName>
+      <stateDescription>Encerrar OS</stateDescription>
+      <instruction>Atividade final do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>740</positionX>
+      <positionY>374</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>6</stateType>
+      <bpmnType>60</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+  </list>
+  <list/>
+  <list>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>OSE - OS Preventiva</processId>
+        <version>1</version>
+        <linkSequence>17</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>14</initialStateSequence>
+      <finalStateSequence>16</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>OSE - OS Preventiva</processId>
+        <version>1</version>
+        <linkSequence>19</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>16</initialStateSequence>
+      <finalStateSequence>18</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>OSE - OS Preventiva</processId>
+        <version>1</version>
+        <linkSequence>32</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>16</initialStateSequence>
+      <finalStateSequence>14</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>OSE - OS Preventiva</processId>
+        <version>1</version>
+        <linkSequence>44</linkSequence>
+      </processLinkPK>
+      <actionLabel>Enviar para Follow UP</actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>12</initialStateSequence>
+      <finalStateSequence>16</finalStateSequence>
+      <returnLabel>Enviar para Follow UP</returnLabel>
+      <name>Enviar para Follow UP</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>OSE - OS Preventiva</processId>
+        <version>1</version>
+        <linkSequence>45</linkSequence>
+      </processLinkPK>
+      <actionLabel>Execução da Preventiva</actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>12</initialStateSequence>
+      <finalStateSequence>18</finalStateSequence>
+      <returnLabel>Execução da Preventiva</returnLabel>
+      <name>Execução da Preventiva</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>OSE - OS Preventiva</processId>
+        <version>1</version>
+        <linkSequence>50</linkSequence>
+      </processLinkPK>
+      <actionLabel>Encerrar OS</actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>18</initialStateSequence>
+      <finalStateSequence>13</finalStateSequence>
+      <returnLabel>Encerrar OS</returnLabel>
+      <name>Encerrar OS</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+  </list>
+  <list/>
+  <list>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>beforeCancelProcess</eventId>
+        <processId>OSE - OS Preventiva</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function beforeCancelProcess(colleagueId,processId){&#xd;
+	&#xd;
+	try{&#xd;
+	    var c1 = DatasetFactory.createConstraint(&quot;workflowColleagueRolePK.roleId&quot;, &quot;GestorOSE&quot;,&quot;GestorOSE&quot; , ConstraintType.MUST);&#xd;
+	    var c2 = DatasetFactory.createConstraint(&quot;workflowColleagueRolePK.colleagueId&quot;, getValue(&quot;WKUser&quot;), getValue(&quot;WKUser&quot;), ConstraintType.MUST);&#xd;
+		var constraints = new Array(c1, c2);&#xd;
+		var dataset = DatasetFactory.getDataset(&quot;workflowColleagueRole&quot;, null, constraints, null);&#xd;
+    	var chapaDoPapel = dataset.getValue(0, &quot;workflowColleagueRolePK.colleagueId&quot;)&#xd;
+	}catch (e){&#xd;
+		throw &quot;\n  Você não pode cancelar esta solicitação  \n&quot;;&#xd;
+	}&#xd;
+	&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>beforeTaskSave</eventId>
+        <processId>OSE - OS Preventiva</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function beforeTaskSave(colleagueId,nextSequenceId,userList){&#xd;
+	&#xd;
+	var login = fluigAPI.getUserService().getCurrent().getLogin();&#xd;
+	var primeiraLetra = login.substring(0, 1).toUpperCase();&#xd;
+	var restoDaString = login.slice(1);&#xd;
+	var codusuario = primeiraLetra + restoDaString;&#xd;
+	//=========================================================================================================================================================&#xd;
+	var dataset = DatasetFactory.getDataset(&quot;ds_OSE_Valida_Acessos&quot;, &#xd;
+	        null, &#xd;
+	        [DatasetFactory.createConstraint(&quot;CODUSUARIO&quot;, codusuario, codusuario, ConstraintType.MUST)],&#xd;
+	        null);&#xd;
+	var temacesso = true&#xd;
+	for(var i = 0; i &lt; dataset.rowsCount; i++) {&#xd;
+        if (dataset.getValue(i, &quot;TEMACESSO&quot;) == &apos;FALSE&apos;){temacesso = false};&#xd;
+    }&#xd;
+	&#xd;
+	if (getValue(&quot;WKNumState&quot;) == &quot;12&quot;){&#xd;
+		if (temacesso){criacaoOSPreventiva()} else {throw &quot;\n\nVocê não tem todos os acessos para proseguir com o processo!\n\n&quot;}&#xd;
+	}&#xd;
+	&#xd;
+	if (getValue(&quot;WKNumState&quot;) == &quot;18&quot; &amp;&amp; getValue(&quot;WKNextState&quot;) == &quot;13&quot;){&#xd;
+		validacaoHorimetroCorreto();&#xd;
+		validacaoRMRSPendente();&#xd;
+		if (temacesso){finalizacaoOSPreventiva()} else {throw &quot;\n\nVocê não tem todos os acessos para proseguir com o processo!\n\n&quot;}&#xd;
+	}&#xd;
+	//=========================================================================================================================================================&#xd;
+	if ((getValue(&quot;WKNumState&quot;) == &quot;0&quot; || getValue(&quot;WKNumState&quot;) == &quot;4&quot;) &amp;&amp; hAPI.getCardValue(&quot;DATAINICIOOS&quot;) == &quot;&quot;){&#xd;
+		var dataFormatada = getDataAtual();&#xd;
+		hAPI.setCardValue(&quot;DATAINICIOOS&quot;, dataFormatada);&#xd;
+	}&#xd;
+	&#xd;
+	if (nextSequenceId == &quot;13&quot;){&#xd;
+		var dataFormatada = getDataAtual();&#xd;
+		hAPI.setCardValue(&quot;DATATERMINOOS&quot;, dataFormatada);&#xd;
+	}&#xd;
+	&#xd;
+}&#xd;
+&#xd;
+function validacaoHorimetroCorreto(){&#xd;
+&#xd;
+	try {&#xd;
+		&#xd;
+		var c1 = DatasetFactory.createConstraint(&quot;IDOBJOF&quot;, hAPI.getCardValue(&apos;OBJETODEMANUTENCAO&apos;),&#xd;
+				hAPI.getCardValue(&apos;OBJETODEMANUTENCAO&apos;), ConstraintType.MUST);&#xd;
+&#xd;
+		var constraints = new Array(c1);&#xd;
+		var dataset = DatasetFactory.getDataset(&apos;ds_OSE_Objeto_de_Manutencao_Horimetro&apos;,null,constraints,null);&#xd;
+		&#xd;
+        //form.setValue(&apos;DATACOLETA&apos;, dataset.getValue(0, &quot;DATACOLETA&quot;));&#xd;
+        &#xd;
+        var horimetroAtual = +(hAPI.getCardValue(&apos;HORIMETROMEDIDOR&apos;))&#xd;
+        var horimetroMaximo = +(dataset.getValue(0, &quot;HORASMAXIMAS&quot;))&#xd;
+        var horimetroAcumulado = +(dataset.getValue(0, &quot;HORIMETRO&quot;))&#xd;
+        &#xd;
+        log.error(&quot;horimetroAtual: &quot;+horimetroAtual)&#xd;
+        log.error(&quot;horimetroMaximo: &quot;+horimetroMaximo)&#xd;
+        log.error(&quot;horimetroAcumulado: &quot;+horimetroAcumulado)&#xd;
+        if(horimetroAtual &gt; horimetroMaximo){&#xd;
+        	throw &quot;\n\n O Horimetro digitado é maior que o prazo desde a ultima medição! \n\n&quot;; &#xd;
+        }&#xd;
+        if(horimetroAtual &lt; horimetroAcumulado){&#xd;
+        	throw &quot;\n\n O Horimetro digitado é menor que o Horimetro acumulado! \n\n&quot;; &#xd;
+        }&#xd;
+&#xd;
+	}catch (e){&#xd;
+		log.error(&quot;Erro ao validar Horimetro, favor tente novamente online\n\n&quot;+e);&#xd;
+		throw e;&#xd;
+	}&#xd;
+	&#xd;
+}&#xd;
+&#xd;
+function criacaoOSPreventiva(){&#xd;
+		&#xd;
+	var nomeDataserver = &quot;MOVMOVIMENTOTBCDATA&quot;&#xd;
+	log.info(&quot;nomeDataserver: &quot;+nomeDataserver)&#xd;
+	&#xd;
+	var user = DatasetFactory.getDataset(&quot;ds_connector&quot;, null, null, null);&#xd;
+	log.info(&quot;user: &quot;+user)&#xd;
+	&#xd;
+	var usuario = user.getValue(0, &quot;INTEGRADOR&quot;)&#xd;
+	log.info(&quot;usuario: &quot;+usuario)&#xd;
+	var senha = user.getValue(0, &quot;SENHA&quot;)&#xd;
+	//log.info(&quot;senha: &quot;+senha)&#xd;
+	var email = user.getValue(0, &quot;EMAIL&quot;)&#xd;
+	log.info(&quot;email: &quot;+email)&#xd;
+	&#xd;
+	var login = fluigAPI.getUserService().getCurrent().getLogin();&#xd;
+	var primeiraLetra = login.substring(0, 1).toUpperCase();&#xd;
+	log.info(&quot;primeiraLetra: &quot;+primeiraLetra)&#xd;
+	var restoDaString = login.slice(1);&#xd;
+	log.info(&quot;restoDaString: &quot;+restoDaString)&#xd;
+	var codusuario = primeiraLetra + restoDaString;&#xd;
+	&#xd;
+	var contexto = &quot;codcoligada=1;codusuario=&quot;+codusuario+&quot;;codsistema=N&quot;;&#xd;
+		log.info(&quot;contexto: &quot;+contexto)&#xd;
+		&#xd;
+	var authService = getWebService(usuario, senha)&#xd;
+	log.info(&quot;authService: &quot;+authService)&#xd;
+	&#xd;
+ &#xd;
+	//var CHAPA = hAPI.getCardValue(&quot;CHAPACOLABORADOR&quot;)&#xd;
+	&#xd;
+	//var NUMPROCES = &quot;+hAPI.getCardValue(&quot;NUMPROCES&quot;)+&quot;&#xd;
+&#xd;
+    //xml que envia as informaçoes para o RM    &#xd;
+	var xml = &quot;&quot;+&#xd;
+	&quot;&lt;MovMovimento&gt;&quot;+&#xd;
+	&#xd;
+	&quot;&lt;TMOV&gt;&quot;+&#xd;
+		&quot;&lt;CODCOLIGADA&gt;1&lt;/CODCOLIGADA&gt;&quot;+&#xd;
+		&quot;&lt;IDMOV&gt;-1&lt;/IDMOV&gt;&quot;+&#xd;
+		&quot;&lt;CODFILIAL&gt;&quot;+hAPI.getCardValue(&quot;CODFILIAL&quot;)+&quot;&lt;/CODFILIAL&gt;&quot;+&#xd;
+		&quot;&lt;CODTMV&gt;1.1.22&lt;/CODTMV&gt;&quot;+&#xd;
+		&quot;&lt;CODLOC&gt;&quot;+hAPI.getCardValue(&quot;CODLOCALESTOQUE&quot;).trim()+&quot;&lt;/CODLOC&gt;&quot;+&#xd;
+		&quot;&lt;CODCCUSTO&gt;&quot;+hAPI.getCardValue(&quot;CODCENTRODECUSTO&quot;)+&quot;&lt;/CODCCUSTO&gt;&quot;+&#xd;
+		&quot;&lt;CODDEPARTAMENTO&gt;&quot;+hAPI.getCardValue(&quot;CODDEPARTAMENTO&quot;)+&quot;&lt;/CODDEPARTAMENTO&gt;&quot;+&#xd;
+		&quot;&lt;CODTB1FAT&gt;02&lt;/CODTB1FAT&gt;&quot;+&#xd;
+		&quot;&lt;CODTB3FAT&gt;05&lt;/CODTB3FAT&gt;&quot;+&#xd;
+		&quot;&lt;HISTORICOLONGO&gt; &lt;/HISTORICOLONGO&gt;&quot;+&#xd;
+		&quot;&lt;CODAGENDAMENTO&gt;&quot;+hAPI.getCardValue(&quot;IDPLANO&quot;)+&quot;&lt;/CODAGENDAMENTO&gt;&quot;+&#xd;
+		&quot;&lt;IDOBJOF&gt;&quot;+hAPI.getCardValue(&quot;OBJETODEMANUTENCAO&quot;)+&quot;&lt;/IDOBJOF&gt;&quot;+&#xd;
+		&quot;&lt;CAMPOLIVRE3&gt;&quot;+hAPI.getCardValue(&quot;HORIMETROVENCIMENTO&quot;)+&quot;&lt;/CAMPOLIVRE3&gt;&quot;;&#xd;
+		if (hAPI.getCardValue(&quot;CHAPARESP&quot;) == &quot;NÃO PREENCHIDO NO TOTVS&quot;){&#xd;
+			xml = xml+&quot;&lt;CHAPARESP&gt;004738&lt;/CHAPARESP&gt;&quot;&#xd;
+		} else {&#xd;
+			xml = xml+&quot;&lt;CHAPARESP&gt;&quot;+hAPI.getCardValue(&quot;CHAPARESP&quot;)+&quot;&lt;/CHAPARESP&gt;&quot;&#xd;
+		}&#xd;
+		xml = xml+&quot;&lt;/TMOV&gt;&quot;;&#xd;
+	&#xd;
+	var NSEQITMMOV = 1;&#xd;
+	var indexes = hAPI.getChildrenIndexes(&quot;TABELA_PLANOMANUTENCAO&quot;);&#xd;
+&#xd;
+	for (var i = 1; i &lt;= indexes.length; ++i) {&#xd;
+		xml = xml+&quot;&lt;TITMMOV&gt;&quot;+&#xd;
+			&quot;&lt;CODCOLIGADA&gt;1&lt;/CODCOLIGADA&gt;&quot;+&#xd;
+			&quot;&lt;IDMOV&gt;-1&lt;/IDMOV&gt;&quot;+&#xd;
+			&quot;&lt;NSEQITMMOV&gt;&quot;+NSEQITMMOV+&quot;&lt;/NSEQITMMOV&gt;&quot;+&#xd;
+			&quot;&lt;CODCCUSTO&gt;&quot;+hAPI.getCardValue(&quot;CODCENTRODECUSTO&quot;)+&quot;&lt;/CODCCUSTO&gt;&quot;+&#xd;
+			&quot;&lt;CODDEPARTAMENTO&gt;&quot;+hAPI.getCardValue(&quot;CODDEPARTAMENTO&quot;)+&quot;&lt;/CODDEPARTAMENTO&gt;&quot;+&#xd;
+			&quot;&lt;IDPRD&gt;&quot;+hAPI.getCardValue(&quot;PLANOMANIDPRD___&quot;+i)+&quot;&lt;/IDPRD&gt;&quot;+&#xd;
+			&quot;&lt;QUANTIDADE&gt;&quot;+hAPI.getCardValue(&quot;PLANOMANQUANTIDADE___&quot;+i).replace(&quot;.&quot;,&quot;,&quot;)+&quot;&lt;/QUANTIDADE&gt;&quot;+&#xd;
+			&quot;&lt;PRECOUNITARIO&gt;&quot;+hAPI.getCardValue(&quot;PLANOMANPRECOUNITARIO___&quot;+i).replace(&quot;.&quot;,&quot;,&quot;)+&quot;&lt;/PRECOUNITARIO&gt;&quot;+&#xd;
+			&quot;&lt;CODTB2FAT&gt;12&lt;/CODTB2FAT&gt;&quot;+&#xd;
+			&quot;&lt;CODTB3FAT&gt;05&lt;/CODTB3FAT&gt;&quot;+&#xd;
+			&quot;&lt;IDOBJOFICINA&gt;&quot;+hAPI.getCardValue(&quot;OBJETODEMANUTENCAO&quot;)+&quot;&lt;/IDOBJOFICINA&gt;&quot;+&#xd;
+			&quot;&lt;IDTIPOOBJ&gt;&quot;+hAPI.getCardValue(&quot;CODTIPOOBJ&quot;)+&quot;&lt;/IDTIPOOBJ&gt;&quot;+&#xd;
+	 	&quot;&lt;/TITMMOV&gt;&quot;;&#xd;
+		NSEQITMMOV++;&#xd;
+	}&#xd;
+ 	&#xd;
+	xml = xml+&quot;&lt;/MovMovimento&gt;&quot;;&#xd;
+			&#xd;
+	log.error(&quot;xml: &quot;)&#xd;
+	log.error(xml)&#xd;
+			&#xd;
+	var result = new String( authService.saveRecord(nomeDataserver, xml, contexto) );&#xd;
+	//String DataServerName, String XML, String UserName, String UserPassword, String contexto, String emailUsuarioContexto&#xd;
+	&#xd;
+	if (result.split(&quot;;&quot;)[0] == &quot;1&quot;){&#xd;
+		hAPI.setCardValue(&quot;OSIDMOV&quot;, result.split(&quot;;&quot;)[1])&#xd;
+		log.error(&quot;result: &quot;+result);&#xd;
+		&#xd;
+		//Execução a seguir altera a OS criada do status &quot;normal&quot; para o &quot;Aguardando Análise&quot;&#xd;
+		var xml = &quot;&lt;MovMovimento&gt;&quot;+&#xd;
+					  &quot;&lt;TMOV&gt;&quot;+&#xd;
+					    &quot;&lt;CODCOLIGADA&gt;1&lt;/CODCOLIGADA&gt;&quot;+&#xd;
+					    &quot;&lt;IDMOV&gt;&quot;+result.split(&quot;;&quot;)[1]+&quot;&lt;/IDMOV&gt;&quot;+&#xd;
+					    &quot;&lt;STATUS&gt;O&lt;/STATUS&gt;&quot;+&#xd;
+					  &quot;&lt;/TMOV&gt;&quot;+&#xd;
+					&quot;&lt;/MovMovimento&gt;&quot;;&#xd;
+					    &#xd;
+		var result = new String( authService.saveRecord(nomeDataserver, xml, contexto) );&#xd;
+		log.error(&quot;result Status: &quot;+result);&#xd;
+		&#xd;
+		if (result.split(&quot;;&quot;)[0] != &quot;1&quot;){&#xd;
+			throw &quot;ERRO AO PREENCHER STATUS CORRETO DA OS&quot;&#xd;
+		}&#xd;
+		&#xd;
+		try{&#xd;
+			var dataset = DatasetFactory.getDataset(&quot;ds_OSE_Numero_OS&quot;, &#xd;
+				        null, &#xd;
+				        [DatasetFactory.createConstraint(&quot;IDMOV&quot;, result.split(&quot;;&quot;)[1], result.split(&quot;;&quot;)[1], ConstraintType.MUST)],&#xd;
+				        null);&#xd;
+			hAPI.setCardValue(&quot;OSNUMEROMOV&quot;,  dataset.getValue(0, &quot;NUMEROMOV&quot;))&#xd;
+		} catch (e){&#xd;
+			throw &quot;ERRO AO CONSULTAR NUMERO DA OS: &quot;+e&#xd;
+		}&#xd;
+	} else {&#xd;
+		throw &quot;ERRO AO CRIAR A OS: &quot;+result&#xd;
+	}&#xd;
+}&#xd;
+&#xd;
+function finalizacaoOSPreventiva(){&#xd;
+	&#xd;
+	var nomeDataserver = &quot;MOVMOVIMENTOTBCDATA&quot;&#xd;
+	log.info(&quot;nomeDataserver: &quot;+nomeDataserver)&#xd;
+	&#xd;
+	var user = DatasetFactory.getDataset(&quot;ds_connector&quot;, null, null, null);&#xd;
+	log.info(&quot;user: &quot;+user)&#xd;
+	&#xd;
+	var usuario = user.getValue(0, &quot;INTEGRADOR&quot;)&#xd;
+	log.info(&quot;usuario: &quot;+usuario)&#xd;
+	var senha = user.getValue(0, &quot;SENHA&quot;)&#xd;
+	//log.info(&quot;senha: &quot;+senha)&#xd;
+	var email = user.getValue(0, &quot;EMAIL&quot;)&#xd;
+	log.info(&quot;email: &quot;+email)&#xd;
+&#xd;
+	var login = fluigAPI.getUserService().getCurrent().getLogin();&#xd;
+	var primeiraLetra = login.substring(0, 1).toUpperCase();&#xd;
+	log.info(&quot;primeiraLetra: &quot;+primeiraLetra)&#xd;
+	var restoDaString = login.slice(1);&#xd;
+	log.info(&quot;restoDaString: &quot;+restoDaString)&#xd;
+	var codusuario = primeiraLetra + restoDaString;&#xd;
+	&#xd;
+	var contexto = &quot;codcoligada=1;codusuario=&quot;+codusuario+&quot;;codsistema=N&quot;&#xd;
+		log.info(&quot;contexto: &quot;+contexto)&#xd;
+		&#xd;
+	var authService = getWebService(usuario, senha)&#xd;
+	log.info(&quot;authService: &quot;+authService)&#xd;
+	&#xd;
+	// Obtém a data atual&#xd;
+	var dataAtual = new Date();&#xd;
+	&#xd;
+	// Extrai os componentes da data&#xd;
+	var ano = dataAtual.getFullYear();&#xd;
+	var mes = (dataAtual.getMonth() + 1) &lt; 10 ? &quot;0&quot;+(dataAtual.getMonth() + 1) : (dataAtual.getMonth() + 1); // Os meses são indexados a partir de 0&#xd;
+	var dia = (dataAtual.getDate()) &lt; 10 ? &quot;0&quot;+(dataAtual.getDate()) : (dataAtual.getDate());&#xd;
+	var horas = (dataAtual.getHours()) &lt; 10 ? &quot;0&quot;+(dataAtual.getHours()) : (dataAtual.getHours());&#xd;
+	var minutos = (dataAtual.getMinutes()) &lt; 10 ? &quot;0&quot;+(dataAtual.getMinutes()) : (dataAtual.getMinutes());&#xd;
+	var segundos = (dataAtual.getSeconds()) &lt; 10 ? &quot;0&quot;+(dataAtual.getSeconds()) : (dataAtual.getSeconds());&#xd;
+	&#xd;
+	// Formata a data&#xd;
+	var dataFormatada = ano+&quot;-&quot;+mes+&quot;-&quot;+dia+&quot;T&quot;+horas+&quot;:&quot;+minutos+&quot;:&quot;+segundos&#xd;
+	&#xd;
+	var historicoLongo = String(hAPI.getCardValue(&quot;SERVICOASEREXECUTADO&quot;)).replace(/\r?\n/g, &apos;\n&apos;) + &apos;\n&apos; + String(hAPI.getCardValue(&quot;SOLUCAO&quot;)).replace(/\r?\n/g, &apos;\n&apos;);&#xd;
+	&#xd;
+	var xml = &quot;&lt;MovMovimento&gt;&quot;+&#xd;
+				  &quot;&lt;TMOV&gt;&quot;+&#xd;
+				    &quot;&lt;CODCOLIGADA&gt;1&lt;/CODCOLIGADA&gt;&quot;+&#xd;
+				    &quot;&lt;IDMOV&gt;&quot;+hAPI.getCardValue(&quot;OSIDMOV&quot;)+&quot;&lt;/IDMOV&gt;&quot;+&#xd;
+				    &quot;&lt;STATUS&gt;Z&lt;/STATUS&gt;&quot;+&#xd;
+				    &quot;&lt;DATAEXTRA1&gt;&quot;+dataFormatada+&quot;&lt;/DATAEXTRA1&gt;&quot;+&#xd;
+				    &quot;&lt;DATAEXTRA2&gt;&quot;+dataFormatada+&quot;&lt;/DATAEXTRA2&gt;&quot;+&#xd;
+					&quot;&lt;HISTORICOLONGO&gt;&quot;+historicoLongo+&quot;&lt;/HISTORICOLONGO&gt;&quot;+&#xd;
+				  &quot;&lt;/TMOV&gt;&quot;+&#xd;
+				  &quot;&lt;TMOVCOMPL&gt;&quot;+&#xd;
+					&quot;&lt;CODCOLIGADA&gt;1&lt;/CODCOLIGADA&gt;&quot;+&#xd;
+					&quot;&lt;IDMOV&gt;&quot;+hAPI.getCardValue(&quot;OSIDMOV&quot;)+&quot;&lt;/IDMOV&gt;&quot;+&#xd;
+					&quot;&lt;ATUALIZACAO2&gt;&quot;+dataFormatada+&quot;&lt;/ATUALIZACAO2&gt;&quot;+&#xd;
+				  &quot;&lt;/TMOVCOMPL&gt;&quot;+&#xd;
+				&quot;&lt;/MovMovimento&gt;&quot;;&#xd;
+&#xd;
+	log.error(&quot;xml: &quot;)&#xd;
+	log.error(xml)&#xd;
+				    &#xd;
+	var result = new String( authService.saveRecord(nomeDataserver, xml, contexto) );&#xd;
+	log.error(&quot;result Status: &quot;+result);&#xd;
+	if (result != (&quot;1;&quot;+hAPI.getCardValue(&quot;OSIDMOV&quot;))){&#xd;
+		throw &quot;ERRO AO FINALIZAR OS&quot;&#xd;
+	}&#xd;
+&#xd;
+	//=================================================================================&#xd;
+	&#xd;
+	var nomeDataserver = &quot;MntHistIndicadorData&quot;;&#xd;
+	&#xd;
+	// Obtém a data atual&#xd;
+	var dataAtual = new Date();&#xd;
+	&#xd;
+	// Extrai os componentes da data&#xd;
+	var ano = dataAtual.getFullYear();&#xd;
+	var mes = (dataAtual.getMonth() + 1) &lt; 10 ? &quot;0&quot;+(dataAtual.getMonth() + 1) : (dataAtual.getMonth() + 1); // Os meses são indexados a partir de 0&#xd;
+	var dia = (dataAtual.getDate()) &lt; 10 ? &quot;0&quot;+(dataAtual.getDate()) : (dataAtual.getDate());&#xd;
+	var horas = (dataAtual.getHours()) &lt; 10 ? &quot;0&quot;+(dataAtual.getHours()) : (dataAtual.getHours());&#xd;
+	var minutos = (dataAtual.getMinutes()) &lt; 10 ? &quot;0&quot;+(dataAtual.getMinutes()) : (dataAtual.getMinutes());&#xd;
+	var segundos = (dataAtual.getSeconds()) &lt; 10 ? &quot;0&quot;+(dataAtual.getSeconds()) : (dataAtual.getSeconds());&#xd;
+	&#xd;
+	// Formata a data&#xd;
+	var dataFormatada = ano+&quot;-&quot;+mes+&quot;-&quot;+dia+&quot;T&quot;+horas+&quot;:&quot;+minutos+&quot;:&quot;+segundos&#xd;
+            &#xd;
+	var dataColeta = hAPI.getCardValue(&quot;DATACOLETA&quot;).split(&quot; &quot;)[0]&#xd;
+	dataColeta = new Date(dataColeta.split(&quot;-&quot;)[0], dataColeta.split(&quot;-&quot;)[1]-1, dataColeta.split(&quot;-&quot;)[2]);&#xd;
+	log.error(&quot;DataColeta: &quot; + dataColeta);&#xd;
+	log.error(&quot;DataAtual: &quot; + new Date(ano, mes-1, dia));&#xd;
+	&#xd;
+&#xd;
+	try{&#xd;
+		var c1_2 = DatasetFactory.createConstraint(&quot;IDOBJOF&quot;, hAPI.getCardValue(&quot;OBJETODEMANUTENCAO&quot;), hAPI.getCardValue(&quot;OBJETODEMANUTENCAO&quot;), ConstraintType.MUST);&#xd;
+		var constraints_2 = new Array(c1_2);&#xd;
+		var dataset_2 = DatasetFactory.getDataset(&quot;ds_OSE_HistoricoIndicadorDeUso&quot;, null, constraints_2, null);&#xd;
+		var horimetroAtual = dataset_2.getValue(0, &quot;VALORMEDIDOR1&quot;);&#xd;
+		var horimetroAcumulado = dataset_2.getValue(0, &quot;VALORACUMULADO1&quot;);&#xd;
+		var combustivelAtual = dataset_2.getValue(0, &quot;VALORMEDIDOR5&quot;) == &quot;null&quot; ? 0 : dataset_2.getValue(0, &quot;VALORMEDIDOR5&quot;);&#xd;
+		var combustivelAcumulado = dataset_2.getValue(0, &quot;VALORACUMULADO5&quot;) == &quot;null&quot; ? 0 : dataset_2.getValue(0, &quot;VALORACUMULADO5&quot;);&#xd;
+		var dataLancamento = dataset_2.getValue(0, &quot;DATALANCAMENTO&quot;).split(&quot; &quot;)[0];&#xd;
+	} catch (e) {&#xd;
+		log.error(e);&#xd;
+	}&#xd;
+	&#xd;
+	if ( parseFloat(horimetroAtual) &lt; parseFloat(hAPI.getCardValue(&quot;HORIMETROMEDIDOR&quot;)) ){&#xd;
+		horimetroAcumulado = parseFloat(horimetroAcumulado) + (parseFloat(hAPI.getCardValue(&quot;HORIMETROMEDIDOR&quot;)) - parseFloat(horimetroAtual));&#xd;
+	}&#xd;
+	if ( parseFloat(combustivelAtual) &lt; parseFloat(hAPI.getCardValue(&quot;VALORMEDIDOR5&quot;)) ){&#xd;
+		combustivelAcumulado = parseFloat(combustivelAcumulado) + (parseFloat(hAPI.getCardValue(&quot;VALORMEDIDOR5&quot;)) - parseFloat(combustivelAtual));&#xd;
+	}&#xd;
+	&#xd;
+	if ( ( new Date(ano, mes-1, dia).toISOString().split(&apos;T&apos;)[0] &gt; dataLancamento ) ||&#xd;
+			( dataLancamento == dataColeta.toISOString().split(&apos;T&apos;)[0] &amp;&amp;&#xd;
+					String(hAPI.getCardValue(&quot;HORIMETROMEDIDOR&quot;)).replace(&quot;.&quot;, &quot;,&quot;) != horimetroAtual.replace(&quot;.&quot;, &quot;,&quot;) ) ){&#xd;
+	    //xml que envia as informaçoes para o RM    &#xd;
+		var xml = &quot;&lt;NewDataSet&gt;&quot;+&#xd;
+					&quot;&lt;OFHistIndicador&gt;&quot;+&#xd;
+				    &quot;&lt;CODCOLIGADA&gt;1&lt;/CODCOLIGADA&gt;&quot;+&#xd;
+					  &quot;&lt;IDOBJOF&gt;&quot; +hAPI.getCardValue(&quot;OBJETODEMANUTENCAO&quot;)+ &quot;&lt;/IDOBJOF&gt;&quot;+&#xd;
+					  &quot;&lt;IDHISTINDICADOR&gt;-1&lt;/IDHISTINDICADOR&gt;&quot;+&#xd;
+					  &quot;&lt;DATACOLETA&gt;&quot; +dataFormatada+ &quot;&lt;/DATACOLETA&gt;&quot;+&#xd;
+					  &quot;&lt;CODUSUARIO&gt;&quot; +codusuario+ &quot;&lt;/CODUSUARIO&gt;&quot;+&#xd;
+					  &quot;&lt;VALORMEDIDOR1&gt;&quot; +hAPI.getCardValue(&quot;HORIMETROMEDIDOR&quot;).replace(&quot;.&quot;, &quot;,&quot;)+ &quot;&lt;/VALORMEDIDOR1&gt;&quot;+&#xd;
+					  &quot;&lt;VALORACUMULADO1&gt;&quot; +String(horimetroAcumulado).replace(&quot;.&quot;, &quot;,&quot;)+ &quot;&lt;/VALORACUMULADO1&gt;&quot;;&#xd;
+		&#xd;
+					if (hAPI.getCardValue(&quot;USAINDICADORUSO5&quot;) == &quot;1&quot;){&#xd;
+						xml = xml+&quot;&lt;VALORMEDIDOR5&gt;&quot; +String(hAPI.getCardValue(&quot;VALORMEDIDOR5&quot;)).replace(&quot;.&quot;, &quot;,&quot;)+ &quot;&lt;/VALORMEDIDOR5&gt;&quot;+&#xd;
+						&quot;&lt;VALORACUMULADO5&gt;&quot; +String(combustivelAcumulado).replace(&quot;.&quot;, &quot;,&quot;)+ &quot;&lt;/VALORACUMULADO5&gt;&quot;;&#xd;
+					}&#xd;
+					xml = xml+&quot;&lt;/OFHistIndicador&gt;&quot;+&#xd;
+				  &quot;&lt;/NewDataSet&gt;&quot;;&#xd;
+					&#xd;
+		var result = new String( authService.saveRecord(nomeDataserver, xml, contexto) );&#xd;
+		log.error(&quot;result: &quot;+result);&#xd;
+		&#xd;
+		if (result.split(&quot;;&quot;)[1] != hAPI.getCardValue(&quot;OBJETODEMANUTENCAO&quot;)){&#xd;
+			throw &quot;ERRO AO LANÇAR HORIMETRO DA MAQUINA&quot;&#xd;
+		}&#xd;
+	} else {&#xd;
+		log.error(&quot;Não entrou no IF&quot;);&#xd;
+		log.error(&quot;=======================================================&quot;);&#xd;
+		log.error(&quot;new Date: &quot;+new Date(ano, mes-1, dia).toISOString().split(&apos;T&apos;)[0]);&#xd;
+		log.error(&quot;dataLancamento: &quot;+dataLancamento);&#xd;
+		log.error(&quot;=======================================================&quot;);&#xd;
+		log.error(&quot;dataLancamento: &quot;+dataLancamento);&#xd;
+		log.error(&quot;datacoleta: &quot;+dataColeta.toISOString().split(&apos;T&apos;)[0]);&#xd;
+		//log.error(&quot;VALORMEDIDOR1: &quot;+String(VALORMEDIDOR1).replace(&quot;.&quot;, &quot;,&quot;));&#xd;
+		log.error(&quot;horimetroAtual: &quot;+horimetroAtual.replace(&quot;.&quot;, &quot;,&quot;));&#xd;
+		log.error(&quot;=======================================================&quot;);&#xd;
+	}&#xd;
+		&#xd;
+}&#xd;
+&#xd;
+function getWebService(usuario, senha){&#xd;
+	&#xd;
+	var nomeServico = &quot;wsDataServer&quot;&#xd;
+		log.info(&quot;nomeServico: &quot;+nomeServico)&#xd;
+		&#xd;
+	var caminhoServico = &quot;com.totvs.WsDataServer&quot;&#xd;
+		log.info(&quot;caminhoServico: &quot;+caminhoServico)&#xd;
+		&#xd;
+	var dataServerService = ServiceManager.getServiceInstance(nomeServico);&#xd;
+	log.info(&quot;dataServerService: &quot;+dataServerService)&#xd;
+	&#xd;
+	if (dataServerService == null){&#xd;
+		throw &quot;Erro ao encontrar serviço!&quot;;&#xd;
+	}&#xd;
+	&#xd;
+	var locator = dataServerService.instantiate(caminhoServico);&#xd;
+	log.info(&quot;locator: &quot;+locator)&#xd;
+&#xd;
+	if (locator == null){&#xd;
+		throw &quot;Erro ao instanciar serviço!&quot;;&#xd;
+	}&#xd;
+	&#xd;
+	var service = locator.getRMIwsDataServer();&#xd;
+	log.info(&quot;service: &quot;+service)&#xd;
+&#xd;
+	if (service == null){&#xd;
+		throw &quot;Erro instancia incorreta ou com problemas!&quot;;&#xd;
+	}&#xd;
+	&#xd;
+	var serviceHelper = dataServerService.getBean();&#xd;
+	log.info(&quot;serviceHelper: &quot;+serviceHelper)&#xd;
+&#xd;
+	if (serviceHelper == null){&#xd;
+		throw &quot;Erro no serviço de autenticação!&quot;;&#xd;
+	}&#xd;
+	&#xd;
+	var authService = serviceHelper.getBasicAuthenticatedClient(service, &quot;com.totvs.IwsDataServer&quot;, usuario, senha)&#xd;
+	log.info(&quot;authService: &quot;+authService)&#xd;
+&#xd;
+	if (authService == null){&#xd;
+		throw &quot;Erro ao autenticar dataserver!&quot;;&#xd;
+	}&#xd;
+	&#xd;
+	return authService;&#xd;
+&#xd;
+}&#xd;
+&#xd;
+function getDataAtual(){&#xd;
+	// Obtém a data e hora atuais&#xd;
+	var dataAtual = new Date();&#xd;
+	&#xd;
+	// Extrai as partes necessárias da data e hora&#xd;
+	var dia = dataAtual.getDate() &lt; 10 ? &apos;0&apos; + dataAtual.getDate() : dataAtual.getDate();&#xd;
+	var mes = (dataAtual.getMonth() + 1) &lt; 10 ? &apos;0&apos; + (dataAtual.getMonth() + 1) : (dataAtual.getMonth() + 1); // Mês começa em zero&#xd;
+	var ano = dataAtual.getFullYear();&#xd;
+	var hora = dataAtual.getHours() &lt; 10 ? &apos;0&apos; + dataAtual.getHours() : dataAtual.getHours();&#xd;
+	var minutos = dataAtual.getMinutes() &lt; 10 ? &apos;0&apos; + dataAtual.getMinutes() : dataAtual.getMinutes();&#xd;
+&#xd;
+	// Formata a data e hora no padrão desejado&#xd;
+	var dataFormatada = dia + &apos;/&apos; + mes + &apos;/&apos; + ano + &apos; - &apos; + hora + &apos;:&apos; + minutos;&#xd;
+&#xd;
+	return dataFormatada&#xd;
+}&#xd;
+&#xd;
+function validacaoRMRSPendente(){&#xd;
+&#xd;
+	try {&#xd;
+		&#xd;
+		var c1 = DatasetFactory.createConstraint(&quot;IDMOVOS&quot;, hAPI.getCardValue(&apos;OSIDMOV&apos;),&#xd;
+			hAPI.getCardValue(&apos;OSIDMOV&apos;), ConstraintType.MUST);&#xd;
+&#xd;
+		var constraints = new Array(c1);&#xd;
+		var dataset = DatasetFactory.getDataset(&apos;ds_OSE_RMRS_Pendente&apos;,null,constraints,null);&#xd;
+		&#xd;
+&#xd;
+        if(dataset.rowsCount &gt; 0){&#xd;
+        	throw &quot;\n\nVocê não pode finalizar uma OS com RM Pendente!\n\n&quot;&#xd;
+        }&#xd;
+&#xd;
+	}catch (e){&#xd;
+		log.error(e)&#xd;
+	}&#xd;
+	&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+  </list>
+  <list/>
+  <list>
+    <SwimLane>
+      <color>FFFFFF</color>
+      <height>471</height>
+      <width>771</width>
+      <positionX>30</positionX>
+      <positionY>10</positionY>
+      <stateName>Ordem de Serviço Preventiva</stateName>
+      <type>1</type>
+      <parentSequence>0</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>OSE - OS Preventiva</processId>
+        <version>1</version>
+        <sequence>1</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>FDBB42</color>
+      <height>157</height>
+      <width>741</width>
+      <positionX>60</positionX>
+      <positionY>10</positionY>
+      <stateName>Controlador </stateName>
+      <type>2</type>
+      <parentSequence>1</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>OSE - OS Preventiva</processId>
+        <version>1</version>
+        <sequence>2</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>A65B59</color>
+      <height>157</height>
+      <width>741</width>
+      <positionX>60</positionX>
+      <positionY>324</positionY>
+      <stateName>Mecânico</stateName>
+      <type>2</type>
+      <parentSequence>1</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>OSE - OS Preventiva</processId>
+        <version>1</version>
+        <sequence>3</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>508575</color>
+      <height>157</height>
+      <width>741</width>
+      <positionX>60</positionX>
+      <positionY>167</positionY>
+      <stateName>Líder</stateName>
+      <type>2</type>
+      <parentSequence>1</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>OSE - OS Preventiva</processId>
+        <version>1</version>
+        <sequence>4</sequence>
+      </swimLanePK>
+    </SwimLane>
+  </list>
+  <list/>
+  <list/>
+  <list>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>OSE - OS Preventiva</processId>
+        <version>68</version>
+        <linkSequence>19</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>582</positionX>
+      <positionY>88</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>OSE - OS Preventiva</processId>
+        <version>68</version>
+        <linkSequence>45</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>133</positionX>
+      <positionY>130</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>OSE - OS Preventiva</processId>
+        <version>68</version>
+        <linkSequence>45</linkSequence>
+        <bendSequence>2</bendSequence>
+      </processLinkBendPK>
+      <positionX>133</positionX>
+      <positionY>391</positionY>
+    </ProcessLinkBend>
+  </list>
+  <list/>
+  <list/>
+  <list>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>OSE - OS Preventiva</processId>
+        <fieldId>OBJETODEMANUTENCAO</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>OBJETODEMANUTENCAO</fieldDescription>
+      <slotId>1</slotId>
+    </ProcessFormField>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>OSE - OS Preventiva</processId>
+        <fieldId>SERIE</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>SERIE</fieldDescription>
+      <slotId>2</slotId>
+    </ProcessFormField>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>OSE - OS Preventiva</processId>
+        <fieldId>HORIMETROMEDIDOR</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>HORIMETROMEDIDOR</fieldDescription>
+      <slotId>3</slotId>
+    </ProcessFormField>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>OSE - OS Preventiva</processId>
+        <fieldId>DATACOLETA</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>DATACOLETA</fieldDescription>
+      <slotId>4</slotId>
+    </ProcessFormField>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>OSE - OS Preventiva</processId>
+        <fieldId>OSNUMEROMOV</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>OSNUMEROMOV</fieldDescription>
+      <slotId>5</slotId>
+    </ProcessFormField>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>OSE - OS Preventiva</processId>
+        <fieldId>OSIDMOV</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>OSIDMOV</fieldDescription>
+      <slotId>6</slotId>
+    </ProcessFormField>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>OSE - OS Preventiva</processId>
+        <fieldId>CODCENTRODECUSTO</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>CODCENTRODECUSTO</fieldDescription>
+      <slotId>7</slotId>
+    </ProcessFormField>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>OSE - OS Preventiva</processId>
+        <fieldId>CENTRODECUSTO</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>CENTRODECUSTO</fieldDescription>
+      <slotId>8</slotId>
+    </ProcessFormField>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>OSE - OS Preventiva</processId>
+        <fieldId>ULTIMOPLANOREALIZADO</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>ULTIMOPLANOREALIZADO</fieldDescription>
+      <slotId>9</slotId>
+    </ProcessFormField>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>OSE - OS Preventiva</processId>
+        <fieldId>PLANODEMANUTENCAO</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>PLANODEMANUTENCAO</fieldDescription>
+      <slotId>10</slotId>
+    </ProcessFormField>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>OSE - OS Preventiva</processId>
+        <fieldId>HORIMETROVENCIMENTO</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>HORIMETROVENCIMENTO</fieldDescription>
+      <slotId>11</slotId>
+    </ProcessFormField>
+  </list>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+</list>
